@@ -277,17 +277,21 @@ header.nav-hidden {
 
 /* Botão principal reutilizável */
 .btn-primary {
-  background-color: #fff;
-  color: #0a0a0a;
+  background-color: transparent;
+  color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
+  border: 2px solid #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 /* Hero responsivo */
