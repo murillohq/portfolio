@@ -38,6 +38,7 @@
       <nav class="navbar">
         <a href="#skills">Skills</a>
         <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a>
       </nav>
     </div>
   </header>
@@ -208,6 +209,32 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section id="certificados" class="section">
+    <div class="container">
+      <h2>Certificados</h2>
+      <div class="certificados-grid">
+
+        <div class="certificado-card">
+          <img src="assets/certificados/certificadoEmpreenda.jpeg" alt="ASSOCIACÃO JATAÍ PARA A INOVACÃO TECNOLÓGICA E O EMPREENDEDORISMO" onclick="abrirLightbox(this.src)" />
+          <h3>Certificado empreenda Jataí. Carga horaria de 04 horas</h3>
+          <p>Apresentação de startups • 2025</p>
+        </div>
+
+        <div class="certificado-card">
+          <img src="assets/certificados/certificadoRaizen.jpeg" alt="Certificado Raizen" onclick="abrirLightbox(this.src)" />
+          <h3>Certificado Raizen, programa ativa juventude</h3>
+          <p>Instituição • 2025</p>
+        </div>
+
+        <div class="certificado-card">
+          <img src="assets/certificados/certificadoAlunoDestaque.jpeg" alt="Certificado Aluno Destaque" onclick="abrirLightbox(this.src)" />
+          <h3>Certificado de aluno destaque no CEPI João Roberto Moreira</h3>
+          <p>Instituição • 2026</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -217,10 +244,16 @@
       Template criado por
       <a href="https://github.com/yasmngoncalves" target="_blank">@yasmndev</a> • Livre para usar e personalizar 🦋
       • Modificações por
-      <a href="https://github.com/usoparacetamol" target="_blank">@usoparacetamol</a>
+      <a href="https://github.com/murillohq" target="_blank">@murillohq</a>
       - Direitos reservados
     </p>
   </footer>
+
+  <!-- LIGHTBOX (visualização ampliada dos certificados) -->
+  <div class="lightbox-overlay" id="lightbox" onclick="fecharLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Certificado ampliado" />
+  </div>
 
   <!-- SCRIPT: Animação Hello World na Hero -->
   <script src='main.js'></script>

@@ -491,6 +491,90 @@ header.nav-hidden {
   opacity: 0.6;
 }
 
+/* Certificados */
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificado-card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #151515;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.certificado-card:hover {
+  transform: translateY(-5px);
+  border-color: #555;
+}
+
+.certificado-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: #0a0a0a;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.certificado-card img:hover {
+  opacity: 0.85;
+}
+
+.certificado-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.certificado-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Lightbox de certificados */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 /* Card de contato com ícones sociais */
 .contato-card {
   background: transparent;

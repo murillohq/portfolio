@@ -29,3 +29,15 @@ window.addEventListener("scroll", () => {
 
   lastScroll = currentScroll;
 });
+
+// Lightbox de certificados
+function abrirLightbox(src) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightboxImg.src = src;
+  lightbox.classList.add("active");
+}
+
+function fecharLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+}
