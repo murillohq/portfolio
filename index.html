@@ -1,262 +1,421 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Título da página -->
+    <title>Portfólio - Murillo Aparecido</title>
 
-  <!-- Título da página -->
-  <title>Portfólio - Murillo Aparecido</title>
+    <!-- Favicon do site -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 
-  <!-- Favicon do site -->
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <!-- Fontes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet" />
 
-  <!-- Fontes Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap"
-    rel="stylesheet" />
+    <!-- Bibliotecas de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
 
-  <!-- Bibliotecas de ícones -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
+  <body>
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header>
+      <div class="container nav-wrapper">
+        <h1 class="logo">
+          Murillo Aparecido<span class="realce"> GameDev</span>
+        </h1>
 
-<body>
-  <!-- CABEÇALHO / NAVEGAÇÃO -->
-  <header>
-    <div class="container nav-wrapper">
-      <h1 class="logo">Murillo Aparecido<span class="realce"> GameDev</span></h1>
+        <!-- Menu mobile com checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-      <!-- Menu mobile com checkbox -->
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-      <nav class="navbar">
-        <a href="#skills">Skills</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#certificados">Certificados</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- HERO - Sessão de boas-vindas com animação de texto -->
-  <section class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="assets/videos/background.mp4" type="video/mp4">
-    </video>
-
-    <div class="container hero-grid">
-      <div class="hero-img">
-        <img src="assets/imgs/fotoperfil.jpg" alt="Foto de perfil" class="profile-img" />
-        <!-- Ícones sociais embaixo da foto -->
-        <div class="social-links-hero">
-          <a href="https://github.com/usoparacetamol" target="_blank" class="btn-social-icon">
-            <i class="devicon-github-original"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/murillo-aparecido-83a9a4367/" target="_blank" class="btn-social-icon">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <p class="location-text">
-          <i class="fas fa-location-dot"></i> Brasil, GO
-        </p>
+        <nav class="navbar">
+          <a href="#skills">Skills</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#ferramentas">Ferramentas</a>
+        </nav>
       </div>
-      <div class="hero-text">
-        <h2><span class="typed-text" id="typed"></span></h2>
-        <p>
-          Sou técnico em Programação de Jogos Digitais (2º ano),
-          desenvolvendo jogos e participando de projetos que me desafiam a inovar e atingir metas.
-        </p>
+    </header>
 
-        <p>
-          Estou sempre em busca de novos projetos para ampliar meu conhecimento e explorar minhas capacidades, além de
-          me manter atualizado sobre as tendências do mercado de desenvolvimento web e jogos, áreas nas quais busco uma
-          oportunidade de emprego.
-        </p>
+    <!-- HERO - Sessão de boas-vindas com animação de texto -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/videos/background.mp4" type="video/mp4" />
+      </video>
 
-        <p>
-          Sou uma pessoa dedicada, proativa e com facilidade de aprendizado. Gosto de trabalhar em equipe e estou sempre
-          disposto a ajudar meus colegas.
-        </p>
-        </p>
-        <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
-        <a href="#skills" class="btn btn-primary">Ver minhas skills</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- HABILIDADES / STACKS (Cards) -->
-  <section id="skills" class="section">
-    <video autoplay muted loop playsinline class="skills-video">
-      <source src="assets/videos/backgroundcoding.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="devicon-html5-plain colored"></i>
-          <span>HTML5</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-css3-plain colored"></i>
-          <span>CSS3</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-javascript-plain colored"></i>
-          <span>JavaScript</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-mysql-plain colored"></i>
-          <span>MySQL</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-git-plain colored"></i>
-          <span>Git</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-github-original"></i>
-          <span>GitHub</span>
-        </div>
-
-        <div class="skill-card">
-          <i class="devicon-python-plain"></i>
-          <span>Python</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOFT SKILLS -->
-  <section id="soft-skills" class="section">
-    <div class="container">
-      <h2>Soft Skills</h2>
-      <div class="soft-skills-grid">
-        <div class="soft-skill-card">
-          <img src="assets/imgs/trabalhoemequipe.webp" alt="Trabalho em Equipe" />
-          <h3>Trabalho em Equipe</h3>
-          <p>Colaboração efetiva em projetos multidisciplinares.</p>
-        </div>
-
-        <div class="soft-skill-card">
-          <img src="assets/imgs/comunicacao.jpg" alt="Comunicação" />
-          <h3>Comunicação</h3>
-          <p>Clareza ao transmitir ideias e feedbacks.</p>
-        </div>
-
-        <div class="soft-skill-card">
-          <img src="assets/imgs/adaptabilidade.jpg" alt="Adaptabilidade" />
-          <h3>Adaptabilidade</h3>
-          <p>Flexibilidade para se ajustar a novas situações e tecnologias.</p>
-        </div>
-
-        <div class="soft-skill-card">
-          <img src="assets/imgs/lideranca.jpg" alt="Liderança" />
-          <h3>Liderança</h3>
-          <p>Capacidade de guiar e motivar equipes rumo aos objetivos.</p>
-        </div>
-
-        <div class="soft-skill-card">
-          <img src="assets/imgs/resiliencia.jpg" alt="Resiliência" />
-          <h3>Resiliência</h3>
-          <p>Capacidade de se adaptar a desafios e mudanças.</p>
-        </div>
-
-        <div class="soft-skill-card">
-          <img src="assets/imgs/criatividade.jpg" alt="Criatividade" />
-          <h3>Criatividade</h3>
-          <p>Busca constante por soluções inovadoras.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projetos" class="section">
-    <video autoplay muted loop playsinline class="projetos-video">
-      <source src="assets/videos/backgroundprojeto.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <h2>Projetos</h2>
-      <div class="projetos-grid">
-        <div class="projeto-card">
-          <img src="assets/imgs/card-projetoreiayanami.png" alt="Print do projeto Bot Rei Ayanami" />
-          <h3>Bot Rei Ayanami</h3>
-          <p>Bot desenvolvido com Python e lib Discord.py.</p>
-          <div class="btns">
-            <span>O código desse bot é privado...</span>
+      <div class="container hero-grid">
+        <div class="hero-img">
+          <img
+            src="assets/imgs/fotoperfil.jpg"
+            alt="Foto de perfil"
+            class="profile-img" />
+          <!-- Ícones sociais embaixo da foto -->
+          <div class="social-links-hero">
+            <a
+              href="https://github.com/usoparacetamol"
+              target="_blank"
+              class="btn-social-icon">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/murillo-aparecido-83a9a4367/"
+              target="_blank"
+              class="btn-social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
-        </div>
-
-        <div class="projeto-card">
-          <img src="assets/imgs/card-projeto-grandesnavegacoes.png" alt="Print do jogo Grandes Navegações" />
-          <h3>Grandes Navegações</h3>
-          <p>
-            Jogo desenvolvido com HTML para escola. Feito por mim, meu professor e
-            meus colegas
+          <p class="location-text">
+            <i class="fas fa-location-dot"></i> Brasil, GO
           </p>
-          <div class="btns">
-            <a href="https://github.com/murilloyoung/projeto-grandesnavegacoes" target="_blank">Ver Código</a>
+        </div>
+        <div class="hero-text">
+          <h2><span class="typed-text" id="typed"></span></h2>
+          <p>
+            Sou técnico em Programação de Jogos Digitais (2º ano), desenvolvendo
+            jogos e participando de projetos que me desafiam a inovar e atingir
+            metas.
+          </p>
+
+          <p>
+            Estou sempre em busca de novos projetos para ampliar meu
+            conhecimento e explorar minhas capacidades, além de me manter
+            atualizado sobre as tendências do mercado de desenvolvimento web e
+            jogos. áreas nas quais busco uma oportunidade de emprego.
+          </p>
+
+          <p>
+            Sou uma pessoa dedicada, proativa e com facilidade de aprendizado.
+            Gosto de trabalhar em equipe e estou sempre disposto a ajudar meus
+            colegas.
+          </p>
+          <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+          <a href="#skills" class="btn btn-primary">Ver minhas skills</a>
+          <a href="#certificados" class="btn btn-primary"
+            >Ver meus certificados</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES / STACKS (Cards) -->
+    <section id="skills" class="section">
+      <video autoplay muted loop playsinline class="skills-video">
+        <source src="assets/videos/backgroundcoding.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="glass-cards">
+          <div data-text="HTML5" style="--r: -30" class="glass">
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+          <div data-text="CSS3" style="--r: -20" class="glass">
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+          <div data-text="JavaScript" style="--r: -10" class="glass">
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+          <div data-text="Python" style="--r: 30" class="glass">
+            <i class="devicon-python-plain"></i>
+          </div>
+          <div data-text="MySQL" style="--r: 0" class="glass">
+            <i class="devicon-mysql-plain colored"></i>
+          </div>
+          <div data-text="Git" style="--r: 10" class="glass">
+            <i class="devicon-git-plain colored"></i>
+          </div>
+          <div data-text="GitHub" style="--r: 20" class="glass">
+            <i class="devicon-github-original"></i>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CERTIFICADOS -->
-  <section id="certificados" class="section">
-    <div class="container">
-      <h2>Certificados</h2>
-      <div class="certificados-grid">
+    <!-- Ferramentas que uso -->
+    <!-- FERRAMENTAS -->
+    <section id="ferramentas" class="section">
+      <div class="container">
+        <h2>Ferramentas</h2>
+        <div class="ferramentas-grid">
+          <div class="tool-card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-vscode-plain colored tool-icon"></i>
+                <h3 class="tool-vscode">VS Code</h3>
+                <p>
+                  Editor de código que uso no dia a dia para desenvolver meus
+                  projetos e jogos, com extensões para Git, Live Server e
+                  linting.
+                </p>
+              </div>
+            </div>
+            <div class="face face2">
+              <i class="devicon-vscode-plain colored face2-icon"></i>
+            </div>
+          </div>
 
-        <div class="certificado-card">
-          <img src="assets/certificados/certificadoEmpreenda.jpeg" alt="ASSOCIACÃO JATAÍ PARA A INOVACÃO TECNOLÓGICA E O EMPREENDEDORISMO" onclick="abrirLightbox(this.src)" />
-          <h3>Certificado empreenda Jataí. Carga horaria de 04 horas</h3>
-          <p>Apresentação de startups • 2025</p>
-        </div>
+          <div class="tool-card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-git-plain colored tool-icon"></i>
+                <h3 class="tool-git">Git</h3>
+                <p>
+                  Sistema de controle de versão que uso para gerenciar o
+                  histórico dos meus projetos e trabalhar em equipe sem perder
+                  código.
+                </p>
+              </div>
+            </div>
+            <div class="face face2">
+              <i class="devicon-git-plain colored face2-icon"></i>
+            </div>
+          </div>
 
-        <div class="certificado-card">
-          <img src="assets/certificados/certificadoraizen.jpeg" alt="Certificado Raizen" onclick="abrirLightbox(this.src)" />
-          <h3>Certificado Raizen, programa ativa juventude</h3>
-          <p>Instituição • 2025</p>
-        </div>
-
-        <div class="certificado-card">
-          <img src="assets/certificados/certificadoAlunoDestaque.jpeg" alt="Certificado Aluno Destaque" onclick="abrirLightbox(this.src)" />
-          <h3>Certificado de aluno destaque no CEPI João Roberto Moreira</h3>
-          <p>Instituição • 2026</p>
+          <div class="tool-card">
+            <div class="face face1">
+              <div class="content">
+                <i class="devicon-github-original tool-icon"></i>
+                <h3 class="tool-github">GitHub</h3>
+                <p>
+                  Plataforma onde hospedo e compartilho meus repositórios,
+                  incluindo este portfólio e meus projetos de jogos.
+                </p>
+              </div>
+            </div>
+            <div class="face face2">
+              <i class="devicon-github-original face2-icon"></i>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- SOFT SKILLS -->
+    <section id="soft-skills" class="section">
+      <div class="container">
+        <h2>Soft Skills</h2>
+        <div class="soft-skills-stack" id="softSkillsStack">
+          <article class="soft-skill-card">
+            <img
+              src="assets/imgs/trabalhoemequipe.webp"
+              alt="Trabalho em Equipe" />
+            <div class="soft-skill-info">
+              <h3>Trabalho em Equipe</h3>
+              <p>Colaboração efetiva em projetos multidisciplinares.</p>
+            </div>
+          </article>
+
+          <article class="soft-skill-card">
+            <img src="assets/imgs/comunicacao.jpg" alt="Comunicação" />
+            <div class="soft-skill-info">
+              <h3>Comunicação</h3>
+              <p>Clareza ao transmitir ideias e feedbacks.</p>
+            </div>
+          </article>
+
+          <article class="soft-skill-card">
+            <img src="assets/imgs/adaptabilidade.jpg" alt="Adaptabilidade" />
+            <div class="soft-skill-info">
+              <h3>Adaptabilidade</h3>
+              <p>
+                Flexibilidade para se ajustar a novas situações e tecnologias.
+              </p>
+            </div>
+          </article>
+
+          <article class="soft-skill-card">
+            <img src="assets/imgs/lideranca.jpg" alt="Liderança" />
+            <div class="soft-skill-info">
+              <h3>Liderança</h3>
+              <p>Capacidade de guiar e motivar equipes rumo aos objetivos.</p>
+            </div>
+          </article>
+
+          <article class="soft-skill-card">
+            <img src="assets/imgs/resiliencia.jpg" alt="Resiliência" />
+            <div class="soft-skill-info">
+              <h3>Resiliência</h3>
+              <p>Capacidade de se adaptar a desafios e mudanças.</p>
+            </div>
+          </article>
+
+          <article class="soft-skill-card">
+            <img src="assets/imgs/criatividade.jpg" alt="Criatividade" />
+            <div class="soft-skill-info">
+              <h3>Criatividade</h3>
+              <p>Busca constante por soluções inovadoras.</p>
+            </div>
+          </article>
+        </div>
+        <p class="stack-hint">Clique em um card para trazê-lo para frente</p>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <video autoplay muted loop playsinline class="projetos-video">
+        <source src="assets/videos/backgroundprojeto.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos-shadow-grid">
+          <div class="projeto-shadow-card">
+            <div class="card-content">
+              <div class="top">
+                <h3 class="name">Python + Discord.py</h3>
+                <div class="date"><span>Privado</span></div>
+              </div>
+              <div class="bottom">
+                <h2>Bot Rei Ayanami</h2>
+                <div class="bookmark bookmark-disabled" title="Código privado">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="bookmark-icn">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-bg">
+              <img
+                class="bg-img"
+                src="assets/imgs/card-projetoreiayanami.png"
+                alt="Print do projeto Bot Rei Ayanami" />
+            </div>
+            <div class="shadow">
+              <img
+                class="shadow-img"
+                src="assets/imgs/card-projetoreiayanami.png"
+                alt="" />
+            </div>
+          </div>
+
+          <div class="projeto-shadow-card">
+            <div class="card-content">
+              <div class="top">
+                <h3 class="name">HTML/CSS + JS</h3>
+                <div class="date"><span>Projeto escolar</span></div>
+              </div>
+              <div class="bottom">
+                <h2>Grandes Navegações</h2>
+                <a
+                  class="bookmark"
+                  href="https://github.com/murilloyoung/projeto-grandesnavegacoes"
+                  target="_blank"
+                  title="Ver código">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="bookmark-icn">
+                    <path
+                      d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-bg">
+              <img
+                class="bg-img"
+                src="assets/imgs/card-projeto-grandesnavegacoes.png"
+                alt="Print do jogo Grandes Navegações" />
+            </div>
+            <div class="shadow">
+              <img
+                class="shadow-img"
+                src="assets/imgs/card-projeto-grandesnavegacoes.png"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="section">
+      <div class="container">
+        <h2>Certificados</h2>
+        <ul class="certificados-stack">
+          <li
+            style="--i: 1"
+            onclick="
+              abrirLightbox('assets/certificados/certificadoEmpreenda.jpeg')
+            ">
+            <img
+              src="assets/certificados/certificadoEmpreenda.jpeg"
+              alt="Certificado Empreenda Jataí" />
+            <div class="content">
+              <h3>Empreenda Jataí</h3>
+              <p>Apresentação de startups • Carga horária de 4h • 2025</p>
+            </div>
+          </li>
+          <li
+            style="--i: 2"
+            onclick="
+              abrirLightbox('assets/certificados/certificadoraizen.jpeg')
+            ">
+            <img
+              src="assets/certificados/certificadoraizen.jpeg"
+              alt="Certificado Raizen" />
+            <div class="content">
+              <h3>Raizen — Programa Ativa Juventude</h3>
+              <p>Instituição • 2025</p>
+            </div>
+          </li>
+          <li
+            style="--i: 3"
+            onclick="
+              abrirLightbox('assets/certificados/certificadoAlunoDestaque.jpeg')
+            ">
+            <img
+              src="assets/certificados/certificadoAlunoDestaque.jpeg"
+              alt="Certificado Aluno Destaque" />
+            <div class="content">
+              <h3>Aluno Destaque — CEPI João Roberto Moreira</h3>
+              <p>Instituição • 2026</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p>
+        Template criado por
+        <a href="https://github.com/yasmngoncalves" target="_blank"
+          >@yasmndev</a
+        >
+        • Livre para usar e personalizar 🦋 • Modificações por
+        <a href="https://github.com/murillohq" target="_blank">@murillohq</a>
+        - Direitos reservados
+      </p>
+    </footer>
+
+    <!-- LIGHTBOX (visualização ampliada dos certificados) -->
+    <div class="lightbox-overlay" id="lightbox" onclick="fecharLightbox()">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Certificado ampliado" />
     </div>
-  </section>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>
-      Template criado por
-      <a href="https://github.com/yasmngoncalves" target="_blank">@yasmndev</a> • Livre para usar e personalizar 🦋
-      • Modificações por
-      <a href="https://github.com/murillohq" target="_blank">@murillohq</a>
-      - Direitos reservados
-    </p>
-  </footer>
-
-  <!-- LIGHTBOX (visualização ampliada dos certificados) -->
-  <div class="lightbox-overlay" id="lightbox" onclick="fecharLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="" alt="Certificado ampliado" />
-  </div>
-
-  <!-- SCRIPT: Animação Hello World na Hero -->
-  <script src='main.js'></script>
-</body>
-
+    <!-- SCRIPT: Animação Hello World na Hero -->
+    <script src="main.js"></script>
+  </body>
 </html>
