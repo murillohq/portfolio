@@ -667,7 +667,6 @@ header.nav-hidden {
   display: flex;
   flex-direction: column;
   gap: 0;
-  transition: 500ms;
   width: min(100%, 450px);
   margin: 3rem auto 0;
   list-style: none;
@@ -689,27 +688,54 @@ header.nav-hidden {
   justify-content: flex-start;
   align-items: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  transition: 500ms;
+  margin-top: -5rem;
+  transition:
+    transform 500ms ease,
+    opacity 500ms ease,
+    filter 500ms ease,
+    margin-top 500ms ease;
   transition-delay: calc(var(--i) * 50ms);
   cursor: pointer;
 }
 
+.certificados-stack li:first-child {
+  margin-top: 0;
+}
+
 .certificados-stack li:nth-child(1) {
-  transform: translateZ(-75px) translateY(20px);
+  transform: translateZ(-60px) translateY(24px);
   opacity: 0.6;
   filter: blur(4px);
 }
 
 .certificados-stack li:nth-child(2) {
+  transform: translateZ(-40px) translateY(16px);
   opacity: 0.85;
   filter: blur(2px);
 }
 
 .certificados-stack li:nth-child(3) {
-  transform: translateZ(65px) translateY(-30px);
+  transform: translateZ(-20px) translateY(8px);
+}
+
+.certificados-stack li:nth-child(4) {
+  transform: translateZ(0) translateY(0);
+}
+
+.certificados-stack li:nth-child(5) {
+  transform: translateZ(20px) translateY(-8px);
+}
+
+.certificados-stack li:nth-child(6) {
+  transform: translateZ(40px) translateY(-16px);
+}
+
+.certificados-stack li:nth-child(7) {
+  transform: translateZ(60px) translateY(-24px);
 }
 
 .certificados-stack:hover li {
+  margin-top: 0;
   opacity: 1;
   filter: blur(0);
   transform: translateZ(0) translateY(0);
