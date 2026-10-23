@@ -12,6 +12,20 @@ function digitar() {
 
 window.addEventListener("DOMContentLoaded", digitar);
 
+// Mantém a foto do portfólio sincronizada com o avatar público do GitHub.
+const githubProfilePhoto = document.getElementById("github-profile-photo");
+if (githubProfilePhoto) {
+  fetch("https://api.github.com/users/murillohq")
+    .then((response) => {
+      if (!response.ok) throw new Error("Não foi possível carregar o perfil do GitHub.");
+      return response.json();
+    })
+    .then((profile) => {
+      if (profile.avatar_url) githubProfilePhoto.src = profile.avatar_url;
+    })
+    .catch((error) => console.warn("Usando a foto local do portfólio:", error));
+}
+
 // Navbar hide/show on scroll
 let lastScroll = 0;
 const header = document.querySelector("header");
